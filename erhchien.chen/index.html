@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Cool Website</title>
+
+	<!-- meta:vp -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- <link rel="stylesheet" type="text/css" href="css/reset.css"> -->
+	<!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
+	<link rel="stylesheet" href="lib/css/styleguide.css">
+	<link rel="stylesheet" href="lib/css/gridsystem.css">
+	<link rel="stylesheet" href="css/storetheme.css">
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+
+</head>
+
+
+<body>
+	<!-- header>h1+P -->
+	<header class="navbar">
+		<div class="container display-flex">
+			<div class="flex-none">
+				<h1>Cool Website</h1>
+			</div>
+			<div class="flex-stretch"></div>
+			<!-- nav.nav>ul>li*4>a[href=#article$]>{Link $} -->
+			<nav class="flex-none nav">
+				<ul class="container display-flex">
+					<li><a href="#article1">Link 1</a></li>
+					<li><a href="#article2">Link 2</a></li>
+					<li><a href="#article3">Link 3</a></li>
+					<li><a href="#article4">Link 4</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	
+	<div class="container">
+		<div class="card soft">
+			<h2>Grid</h2>
+			<div class="grid">
+				<div class="col-xs-6">column 6</div>
+				<div class="col-xs-6">column 6</div>
+			</div>
+			<div class="grid gap xs-small md-medium">
+				<div class="col-xs-4">column 4</div>
+				<div class="col-xs-4">column 4</div>
+				<div class="col-xs-4">column 4</div>
+
+				<div class="col-xs-3">column 3</div>
+				<div class="col-xs-3">column 3</div>
+				<div class="col-xs-3">column 3</div>
+				<div class="col-xs-3">column 3</div>
+
+				<div class="col-xs-3">column 3</div>
+				<div class="col-xs-6">column 6</div>
+				<div class="col-xs-3">column 3</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="card soft">
+			<h2>Responsive Grid</h2>
+			<div class="grid">
+				<div class="col-xs-12 col-md-6">column 6</div>
+				<div class="col-xs-12 col-md-6 ">column 6</div>
+			</div>
+			<div class="grid">
+				<div class="col-xs-12 col-md-4 col-xl-3">column 4</div>
+				<div class="col-xs-12 col-md-4 col-xl-6">column 4</div>
+				<div class="col-xs-12 col-md-4 col-xl-3">column 4</div>
+
+				<div class="col-xs-3">column 3</div>
+				<div class="col-xs-3">column 3</div>
+				<div class="col-xs-3">column 3</div>
+				<div class="col-xs-3">column 3</div>				
+			</div>
+			<div class="grid ten">
+				<div class="col-xs-3">column 3</div>
+				<div class="col-xs-3">column 3</div>
+				<div class="col-xs-6">column 6</div>
+			</div>
+			<div class="grid ten gap">
+				<div class="col-xs-2">column 2</div>
+				<div class="col-xs-2">column 2</div>
+				<div class="col-xs-2">column 2</div>
+				<div class="col-xs-2">column 2</div>
+				<div class="col-xs-2">column 2</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="grid gap xs-small md-medium">
+			<div class="col-xs-6 col-md-3">
+				<div class="card soft ">
+					<img src="https://via.placeholder.com/500" alt="" class="media-image">
+				</div>
+			</div>
+			<div class="col-xs-6 col-md-3">
+				<div class="card soft">
+					<img src="https://via.placeholder.com/500" alt="" class="media-image">
+				</div>
+			</div>
+			<div class="col-xs-6 col-md-3">
+				<div class="card soft">
+					<img src="https://via.placeholder.com/500" alt="" class="media-image">
+				</div>
+			</div>
+			<div class="col-xs-6 col-md-3">
+				<div class="card soft">
+					<img src="https://via.placeholder.com/500" alt="" class="media-image">
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<!-- div.container>article#artivle$.article*4>h2{Article $}+div.article-body>p*3>lorem35 -->
+	<div class="container">
+		<article id="artivle1" class="article card soft">
+			<div class="display-flex flex-align-center">
+				<div class="flex-stretch">
+					<h2>Article 1</h2>
+				</div>
+				<div class="flex-none">
+					<small>5:20am</small>
+				</div>
+			</div>
+			<div class="article-body">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi ducimus et voluptas doloribus pariatur, voluptatum aperiam illum at itaque tempora ratione ut temporibus vel atque eveniet perferendis sint, veniam, iste nesciunt voluptatem officia qui ipsa!</p>
+				<p>Architecto eaque eum ut rem nihil dolore ducimus voluptatem ratione est dicta, non consequuntur qui quis minus consequatur illum odio eligendi libero, doloribus nesciunt id inventore dolores optio eos deserunt. Quasi animi, ea distinctio sit.</p>
+				<p>Unde natus facere quaerat culpa enim corrupti iste rem adipisci. Fuga reprehenderit, sequi illo, optio, accusamus quo voluptate architecto eum blanditiis quaerat libero, culpa recusandae. Nihil culpa ducimus rem non veritatis magni neque expedita corrupti!</p>
+			</div>
+		</article>
+		<article id="artivle2" class="article card hard">
+			<h2>Article 2</h2>
+			<div class="article-body">
+				<p>Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Architecto hic, distinctio! Aliquam amet quas sint obcaecati impedit facere provident est repellendus cum cupiditate iste consequatur id sit, autem minus nam, ipsa numquam at. Enim, natus?</p>
+				<p>Veniam eius et, quidem voluptatum iure error sequi exercitationem mollitia cupiditate quis ad optio amet quaerat voluptatibus saepe repellat accusantium! Tempora blanditiis et, quasi, perferendis nesciunt dolorem hic quod aspernatur doloremque consectetur, non error temporibus.</p>
+				<p>Dicta quae recusandae voluptate architecto, consequuntur ullam repellat. Veniam dicta odio eveniet, fuga quisquam harum. Similique deserunt dolorem harum distinctio et voluptatem ipsam ipsa, culpa recusandae unde iusto enim dignissimos quis alias veniam delectus facilis?</p>
+			</div>
+		</article>
+	</div>
+	<div class="view-window" style="background-image:url('img/hot-tea.jpeg');">
+		
+	</div>
+	<div class="container">
+		<article id="artivle3" class="article">
+			<h2>Article 3</h2>
+			<div class="article-body">
+				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum, est repellat consequuntur sint atque, nulla veniam harum, quas unde id debitis? Pariatur at aspernatur, mollitia ea sunt dolor quod id! Commodi inventore, ratione eius aut!</p>
+				<p>Laboriosam eligendi quisquam deleniti esse cum, aliquam excepturi totam quasi temporibus dolorum corporis distinctio tempore ipsam aspernatur minima, quis error ab obcaecati, dolore dicta! Eligendi animi natus eum adipisci eos sunt autem deserunt libero culpa!</p>
+				<p>Quia, fugit quidem dignissimos maiores ex incidunt unde, suscipit id quaerat sequi, accusantium perspiciatis reprehenderit sapiente nihil. Quis mollitia repudiandae dolorem eius distinctio sint nostrum hic quod reiciendis expedita, amet qui ab ratione sit consequatur.</p>
+			</div>
+		</article>
+		<article id="artivle4" class="article">
+			<h2>Article 4</h2>
+			<div class="article-body">
+				<p>Lorem ipsum, dolor sit amet consectetur adipisicing, elit. Ad, voluptatem eaque eligendi ratione neque enim recusandae vitae provident possimus perferendis! Tenetur rem vero dolore consectetur quos, repudiandae alias doloribus incidunt consequuntur, placeat deserunt omnis ab!</p>
+				<p>Ut earum officiis rerum omnis incidunt quaerat nemo saepe dolor voluptatum pariatur et commodi quos, nam inventore molestiae ab nihil, harum tempore sit? Voluptate facilis, harum officiis saepe a laudantium exercitationem maiores error quod corporis.</p>
+				<p>Facere consequatur at doloremque et tempore quis, aspernatur debitis consequuntur, voluptatem ad deleniti incidunt! Culpa tenetur odit voluptates sequi labore ea iste similique autem laboriosam. Est voluptate nobis id, totam deserunt atque beatae nisi accusantium!</p>
+			</div>
+		</article>
+	</div>
+	<!-- footer>p{&copy; Copyright 2002 - miowebdesign.com} HTML special characters -->
+</body>
+
+
+
+<script src="zoom.js"></script>
+</html>
