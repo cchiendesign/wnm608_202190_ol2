@@ -2,6 +2,10 @@
 
 :root {
 	--color-offwhite:  #f4f4f4;
+
+	--color-main-light: #e7e4e1;
+	--color-main-medium: #8b9c73;
+	--color-main-dark: #323c25;
 }
 
 /* main css */
