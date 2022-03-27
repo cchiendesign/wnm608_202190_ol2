@@ -1,0 +1,6 @@
+.banner {
+    background: url(../img/wagashi-banner.jpeg)center bottom;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 30em;
+}
