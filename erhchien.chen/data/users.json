@@ -1,0 +1,44 @@
+[	
+	{
+		"name":"Erh Chien Chen",
+		"type": "Student",
+		"email": "echen21@art.edu",
+		"classes":[608,606,635]
+	},
+	{
+		"name":"Phobe Kao",
+		"type": "Designer",
+		"email": "pk@art.edu",
+		"classes":[612,606,635]
+	},
+	{
+		"name":"Kim Jen Woo",
+		"type": "Super Star",
+		"email": "honey@art.edu",
+		"classes":[111,222,333]
+	},
+	{
+		"name":"Elon Musk",
+		"type": "CEO",
+		"email": "teslar@art.edu",
+		"classes":[608,606,635]
+	},
+	{
+		"name":"Holly wood",
+		"type": "King",
+		"email": "king@art.edu",
+		"classes":[122,612,125]
+	},
+	{
+		"name":"Takashi",
+		"type": "Superstar",
+		"email": "honey99@art.edu",
+		"classes":[999,888,777]
+	},
+	{
+		"name":"JJ Lin",
+		"type": "Signer",
+		"email": "JJ@art.edu",
+		"classes":[123,456,242]
+	}
+]

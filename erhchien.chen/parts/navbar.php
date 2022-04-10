@@ -8,7 +8,7 @@
 			<ul>
 				<li><a href="index.php">Home</a></li>
 				<li><a href="product_list.php">Store</a></li>
-				<li><a href="product_item.php">Products</a></li>
+				<li><a href="#">Link3</a></li>
 			</ul>
 		</nav>
 	</div>
