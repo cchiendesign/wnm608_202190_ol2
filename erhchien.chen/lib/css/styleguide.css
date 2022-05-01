@@ -78,6 +78,7 @@ p {
 .flex-align-center {align-items: center}
 .flex-justify-center {justify-content: center;}
 
+.flex-column { flex-direction: column; }
 
 
 
@@ -210,7 +211,6 @@ p {
 		border-radius: 0.3em;
 		border: 2px solid var(--color-neutral-medium);
 	}
-
 	.card.dark {
 		background-color: var(--color-neutral-dark);
 		color: var(--color-neutral-light);
@@ -218,10 +218,18 @@ p {
 	.card.medium {
 		background-color: var(--color-neutral-medium);
 	}
-
 	.card.flat {
 		padding: 0;
 	}
+
+	.card-section~.card-section {
+	border-top: 1px solid var(--color-neutral-light);
+
+	}
+	.card-section {
+		padding: 1em;
+	}
+
 
 
 
@@ -329,6 +337,9 @@ form input {
 	border-radius: 0.2em;
 	cursor: pointer;
 	text-align: center;
+}
+.form-button.inline {
+	width: initial;
 }
 .form-button:hover {
 	text-decoration: none;

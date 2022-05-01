@@ -1,3 +1,10 @@
+<?php 
+
+	include_once "lib/php/functions.php";
+	include_once "parts/templates.php";
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,17 +31,17 @@
 			</ul>
 		</div> -->
 		<h2>Product List</h2>
-		<div class="grid gap">
+		<!-- <div class="grid gap">
 			<div class="col-xs-12 col-md-3">
 				<a href="product_item.php?id=1">
 					<figure class="figure product">
-					<img src="img/sakuragoromo.jpeg" alt="">
-					<figcaption>
-						<div>Product Name1</div>
-						<div>3.99</div>
-					</figcaption>
-				</figure>
-			</a>	
+						<img src="img/sakuragoromo.jpeg" alt="">
+						<figcaption>
+							<div>Product Name1</div>
+							<div>3.99</div>
+						</figcaption>
+					</figure>
+				</a>	
 			</div>
 			<div class="col-xs-12 col-md-3">
 				<a href="product_item.php?id=2">
@@ -69,7 +76,21 @@
 				</figure>
 			</a>	
 			</div>
-		</div>
+		</div> -->
+
+		<?php
+			
+			$result = makeQuery(makeConn(), "
+				SELECT *
+				FROM `products`
+				ORDER BY `price`
+				-- LIMIT 5
+			");
+			// print_p($result);
+			echo "<div class='productlist grid gap'>", array_reduce($result,'productListTemplate'), "</div>";
+		?>
+
+
 	</div>
 
 
