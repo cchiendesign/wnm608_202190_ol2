@@ -13,6 +13,10 @@
 	<title>Product List</title>
 
 	<?php include "parts/meta.php"; ?>
+
+	<script src="lib/js/functions.js"></script>
+    <script src="js/templates.js"></script>
+    <script src="js/product_list.js"></script>
 	
 </head>
 <body>
@@ -20,65 +24,44 @@
 	<?php include "parts/navbar.php"; ?>
 
 	<div class="container">
-		<!-- <div class="card soft">
-			<h2>Product List</h2>
-
-			<ul>
-				<li><a href="product_item.php?id=1">Product 1</a></li>
-				<li><a href="product_item.php?id=2">Product 2</a></li>
-				<li><a href="product_item.php?id=3">Product 3</a></li>
-				<li><a href="product_item.php?id=4">Product 4</a></li>
-			</ul>
-		</div> -->
 		<h2>Product List</h2>
-		<!-- <div class="grid gap">
-			<div class="col-xs-12 col-md-3">
-				<a href="product_item.php?id=1">
-					<figure class="figure product">
-						<img src="img/sakuragoromo.jpeg" alt="">
-						<figcaption>
-							<div>Product Name1</div>
-							<div>3.99</div>
-						</figcaption>
-					</figure>
-				</a>	
-			</div>
-			<div class="col-xs-12 col-md-3">
-				<a href="product_item.php?id=2">
-					<figure class="figure product">
-					<img src="img/sakuragoromo.jpeg" alt="">
-					<figcaption>
-						<div>Product Name2</div>
-						<div>3.99</div>
-					</figcaption>
-				</figure>
-			</a>	
-			</div>
-			<div class="col-xs-12 col-md-3">
-				<a href="product_item.php?id=3">
-					<figure class="figure product">
-					<img src="img/sakuragoromo.jpeg" alt="">
-					<figcaption>
-						<div>Product Name3</div>
-						<div>3.99</div>
-					</figcaption>
-				</figure>
-			</a>	
-			</div>
-			<div class="col-xs-12 col-md-3">
-				<a href="product_item.php?id=4">
-					<figure class="figure product">
-					<img src="img/sakuragoromo.jpeg" alt="">
-					<figcaption>
-						<div>Product Name4</div>
-						<div>3.99</div>
-					</figcaption>
-				</figure>
-			</a>	
-			</div>
-		</div> -->
+		
+		<div class="form-control">
+            <form class="hotdog light" id="product-search">
+                <input type="search" placeholder="Search Products">
+            </form>
+        </div>
 
-		<?php
+        <div class="form-control display-flex">
+            <div class="flex-none">
+                <button data-filter="category" data-value="" type="button" class="form-button">All</button>
+            </div>
+            &nbsp;
+            <div class="flex-none">
+                <button data-filter="category" data-value="dorayaki" type="button" class="form-button">Dorayaki</button>
+            </div>
+            &nbsp;
+            <div class="flex-none">
+                <button data-filter="category" data-value="mochi" type="button" class="form-button">Mochi</button>
+            </div>
+            &nbsp;
+            <div class="flex-none">
+                <button data-filter="category" data-value="daifuku" type="button" class="form-button">Daifuku</button>
+            </div>
+                <div class="display-flex" style="margin-left: auto;">
+                <div class="form-select" style="margin: 0;">
+                <select class="js-sort" style="width: -webkit-fill-available;">
+                <option value="1">Newest</option>
+                <option value="2">Oldest</option>
+                <option value="3">Lowest Price</option>
+                <option value="4">Highest Price</option>
+                 </select>
+                </div>
+                </div>
+        </div>
+
+
+		<!-- <?php
 			
 			$result = makeQuery(makeConn(), "
 				SELECT *
@@ -88,7 +71,10 @@
 			");
 			// print_p($result);
 			echo "<div class='productlist grid gap'>", array_reduce($result,'productListTemplate'), "</div>";
-		?>
+		?> -->
+
+		<div class='productlist grid gap'></div>
+
 
 
 	</div>
