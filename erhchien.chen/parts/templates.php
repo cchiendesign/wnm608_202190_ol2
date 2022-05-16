@@ -1,20 +1,8 @@
 <?php	
 
-// <div class="col-xs-12 col-md-3">
-// 		<a href="product_item.php?id=$o->id">
-// 			<figure class="figure product">
-// 				<img src="img/$o->images" alt="">
-// 				<figcaption>
-// 					<div>&dollar;$o->price</div>
-// 					<div>$o->name</div>
-// 				</figcaption>
-// 			</figure>
-// 		</a>	
-// 	</div>
 
 function productListTemplate($r,$o) {
 	return $r.<<<HTML
-
 	<a class="col-xs-12 col-md-3" href="product_item.php?id=$o->id">
 		<figure class="figure product display-flex flex-column">
 			<div class = "flex-stretch">
@@ -25,10 +13,8 @@ function productListTemplate($r,$o) {
 					<div>$o->name</div>
 			</figcaption>
 		</figure>
-	</a>
-		
+	</a>	
 	HTML;
-
 }
 
 
@@ -100,4 +86,53 @@ function cartTotals() {
     </div>
     HTML;
 }
+
+
+function recommendedProducts($a) {
+$products = array_reduce($a,'productListTemplate');
+echo <<<HTML
+<div class="grid gap productlist">$products</div>
+HTML;
+}
+
+function recommendedCategory($cat,$limit=4) {
+    $result = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `category`='$cat' ORDER BY `date_create` DESC LIMIT $limit");
+    recommendedProducts($result);
+}
+
+function recommendedSimilar($cat,$id=0,$limit=3) {
+    $result = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `category`='$cat' AND `id`<>$id ORDER BY rand() LIMIT $limit");
+    recommendedProducts($result);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

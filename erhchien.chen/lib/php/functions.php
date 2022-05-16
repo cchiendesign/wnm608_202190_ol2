@@ -11,12 +11,22 @@ function file_get_json($filename){
 	return json_decode($file);
 }
 
+
 include_once "auth.php";
 function makeConn(){
-   $conn = new mysqli(...MYSQLIAuth());
-   if($conn->connect_errno) die($conn->connect_error);
-   $conn->set_charset('utf8');
-   return $conn;
+    $conn = new mysqli(...MYSQLIAuth());
+    if($conn->connect_errno) die($conn->connect_error);
+    $conn->set_charset('utf8');
+    return $conn;
+}
+
+function makePDOConn(){
+    try{
+        $conn = new PDO(...PDOAuth());
+    }catch(PDOException $e) {
+        die($e->getMessage());
+    }
+    return $conn;
 }
 
 function makeQuery($conn,$qry){

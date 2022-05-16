@@ -38,7 +38,7 @@
             </div>
             &nbsp;
             <div class="flex-none">
-                <button data-filter="category" data-value="dorayaki" type="button" class="form-button">Dorayaki</button>
+                <button data-filter="category" data-value="pancake" type="button" class="form-button">Pancake</button>
             </div>
             &nbsp;
             <div class="flex-none">
@@ -46,7 +46,10 @@
             </div>
             &nbsp;
             <div class="flex-none">
-                <button data-filter="category" data-value="daifuku" type="button" class="form-button">Daifuku</button>
+                <button data-filter="category" data-value="jelly" type="button" class="form-button">Jelly</button>
+            </div>
+            <div class="flex-none">
+                <button data-filter="category" data-value="senbei" type="button" class="form-button">Senbei</button>
             </div>
                 <div class="display-flex" style="margin-left: auto;">
                 <div class="form-select" style="margin: 0;">
