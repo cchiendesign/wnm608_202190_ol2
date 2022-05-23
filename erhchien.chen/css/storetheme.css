@@ -81,7 +81,7 @@ body {
 
 .figure.product {
 	border-radius: 0.5em;
-	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	/*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);*/
 	overflow: hidden;
 	height: 100%;
 	transition: all 0.3s;
@@ -98,7 +98,7 @@ body {
 }
 
 .product.figure:hover {
-	box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 2px 15px rgb(50 60 37 / 10%);
 }
 
 .product-overlay {

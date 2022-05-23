@@ -52,6 +52,10 @@
                         <button data-filter="category" data-value="senbei" type="button" class="form-button">Senbei</button>
                     </div>
                     &nbsp;
+                    <div class="flex-none">
+                        <button data-filter="category" data-value="Namagashi" type="button" class="form-button">Namagashi</button>
+                    </div>
+                    &nbsp;
                     <div class="display-flex" style="margin-left: auto;">
                         <div class="form-select" style="margin: 0;">
                             <select class="js-sort" style="width: -webkit-fill-available;">

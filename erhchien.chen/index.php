@@ -36,10 +36,18 @@ include_once "parts/templates.php";
 			</div>
 			<div class="intro-img index-intro-02"></div>
 		</section>
+		<section class="intro flex items-center justify-between">
+			<!-- <img src="img/sakuragoromo.jpeg" alt=""> -->
+			<div class="intro-img index-intro-03"></div>
+			<div class="descript">
+				<h1>Enjoy seasons</h1>
+				<p>Profound appreciation of the changing seasons and nature is of great importance in Japan and WAGASHI plays an important role there. We enjoy the seasons by seeing and eating WAGASHI. In spring there are confectioneries with cherry blossoms, in summer they represent a refreshing stream, in fall seasonal chestnut and persimmons are used, and in winter, our WAGASHI depict snow and spring longed-for.</p>
+			</div>
+		</section>
 		<section>
 			<div class="container card soft">
 		        <h2>Latest Wagashi</h2>
-		        <?php recommendedCategory("Pancake"); ?>
+		        <?php recommendedCategory("Namagashi"); ?>
 		    </div>
 		</section>
 
