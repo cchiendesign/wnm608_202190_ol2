@@ -6,6 +6,7 @@
 	--color-main-light: #dad9bf;
 	--color-main-medium: #8b9c73;
 	--color-main-dark: #323c25;
+	--color-main-dark-trans: rgb(156 158 151 / 90%);
 
 	--color-mont-light: #D0C3B3;
 }
@@ -42,7 +43,7 @@ body {
 
 
 
-@media (max-width: 400px) {
+@media (max-width: 800px) {
 	.container {
 		padding-left: 1em;
 		padding-right: 1em;
@@ -51,13 +52,29 @@ body {
 		padding-left: 0.5em;
 	}
 }
-
-@media (max-width: 800px) {
+.menu-button label {display: none;}
+@media (max-width: 400px) {
 	.navbar .display-flex {
+		flex-wrap: wrap;
+	}
+	.navbar .nav {
+		width: 100%;
+		display: none;
+	}
+	.navbar .nav-flex ul {
 		display: block;
 	}
 	.navbar .nav li {
 		line-height: 2em;
+	}
+
+	.menu-button label {
+	display: block;
+	padding: 0 1em;
+	}
+
+	#menu:checked+.navbar .nav {
+		display: block;
 	}
 }
 

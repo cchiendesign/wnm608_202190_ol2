@@ -4,9 +4,9 @@
 function productListTemplate($r,$o) {
 	return $r.<<<HTML
 	<a class="col-xs-12 col-md-3" href="product_item.php?id=$o->id">
-		<figure class="figure product display-flex flex-column">
+		<figure class="card soft figure product display-flex flex-column">
 			<div class = "flex-stretch">
-				<img src = "img/$o->thumbnail" / >
+				<img src = "img/$o->thumbnail" alt="">
 			</div>
 			<figcaption class= "flex-none">
 					<div>&dollar;$o->price</div>
@@ -81,9 +81,7 @@ function cartTotals() {
         <div class="flex-stretch"><strong>Total</strong></div>
         <div class="flex-none">&dollar;$taxedfixed</div>
     </div>
-    <div class="card-section">
-        <a href="product_checkout.php" class="form-button">Checkout</a>
-    </div>
+    
     HTML;
 }
 
@@ -95,6 +93,11 @@ echo <<<HTML
 HTML;
 }
 
+function recommendedAnything($limit=4) {
+    $result = makeQuery(makeConn(),"SELECT * FROM `products` ORDER BY rand() LIMIT $limit");
+    recommendedProducts($result);
+}
+
 function recommendedCategory($cat,$limit=4) {
     $result = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `category`='$cat' ORDER BY `date_create` DESC LIMIT $limit");
     recommendedProducts($result);
@@ -104,6 +107,8 @@ function recommendedSimilar($cat,$id=0,$limit=3) {
     $result = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `category`='$cat' AND `id`<>$id ORDER BY rand() LIMIT $limit");
     recommendedProducts($result);
 }
+
+
 
 
 

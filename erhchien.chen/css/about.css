@@ -1,0 +1,85 @@
+
+
+.about-banner {
+    background: url(../img/wagashi-banner02.jpeg)center bottom;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 30em;
+}
+
+article {
+    line-height: 1.5em;
+    margin-top: 1em;
+}
+
+ul {
+    padding-inline-start: 0;
+}
+
+
+
+h5 {
+    color: var(--color-neutral-medium);
+}
+
+.descript {
+    margin-top: 40px;
+}
+
+.descript .about{
+    width: 70%;
+}
+
+.descript .info {
+    width: 20%;
+    border-left: 1px solid #80808033;
+    padding: 0px 0 10px 30px;
+    margin-top: 3em;
+}
+
+.info .contact-lists{
+    margin-top: 30px;
+}
+
+.info .contact-lists li {
+    margin: 14px 0;
+    color: #bbbbbb;
+    font-size: 0.9em;
+    line-height: 1.4em;
+}
+
+
+h5 ul li {
+    font-size: 0.9em;
+    line-height: 1.3;
+
+}
+
+.map {
+    margin-top: 60px;
+}
+.map .lazy {
+    width: 100%;
+    height: 35vh;
+}
+
+@media (max-width: 767px) {
+    .container-museum {
+        padding: 6em 2em 10em;
+    }
+    .descript {
+        flex-flow: column;
+    }
+    .descript .about,
+    .descript .info {
+        width: 100%;
+    }
+}
+@media (max-width: 424px) {
+    .container-museum {
+        padding: 6em 1.5em 10em;
+    }
+    .map .lazy {
+        height: 35vh;
+    }
+}

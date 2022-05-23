@@ -1,6 +1,28 @@
 .banner {
-    background: url(../img/wagashi-banner.jpeg)center bottom;
+    background: url(../img/wagashi-banner01.jpeg)center bottom;
     background-size: cover;
     background-attachment: fixed;
     height: 30em;
 }
+
+.intro-img {
+    width: 40%;
+    min-height: 50vh;
+    margin: 3em 0;
+    border-radius: 100%;
+}
+
+.descript {
+    width: 50%;
+}
+
+.index-intro-01 {
+    background: url(../img/wagashi-banner02.jpeg) center no-repeat;
+    background-size: cover;
+}
+
+.index-intro-02 {
+    background: url(../img/wagashi-banner03.jpeg) center no-repeat;
+    background-size: cover;
+}
+
