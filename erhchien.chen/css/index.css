@@ -2,7 +2,21 @@
     background: url(../img/wagashi-banner01.jpeg)center bottom;
     background-size: cover;
     background-attachment: fixed;
-    height: 30em;
+    height: 90vh;
+    position: relative;
+}
+
+.index-banner:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background: url(../img/banner-word.svg) center no-repeat;
+    background-size: contain;
+    width: 50%;
+    height: 50%;
+    transform: translate(-50%, -50%);
+    /*filter: drop-shadow(0px 0px 20px rgba(130,125,75,0.3));*/
 }
 
 .intro-img {
@@ -31,3 +45,15 @@
     background-size: cover;
 }
 
+
+@media (max-width: 767px) {
+    .intro {
+        flex-flow: column;
+    }
+    .intro-img {
+        width: 100%
+    }
+    .descript {
+        width: 100%
+    }
+}
